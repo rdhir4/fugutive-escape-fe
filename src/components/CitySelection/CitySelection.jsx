@@ -36,6 +36,8 @@ const CitySelection = ({ cop, onCitySelect, currentSelectedCity }) => {
                 }`}
               />
               <Typography>{city.name}</Typography>
+              <Typography>Distance: {`${city.distance} km`}</Typography>
+
             </Box>
           </Grid>
         ))}
