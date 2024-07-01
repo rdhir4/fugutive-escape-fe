@@ -42,3 +42,7 @@ body {
 .cop-card {
   padding: 20px;
 }
+
+.selected {
+  border: 3px solid green;
+}
