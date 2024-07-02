@@ -117,7 +117,17 @@ const App = () => {
                             </Paper>
                         </Grid>
                     ))}
-                    <Button onClick={determineResult} disabled={isBtnDisabled()}>Simulate</Button>
+                   <Grid item xs={12} sm={6} md={4}>
+                        <Button
+                            onClick={determineResult}
+                            disabled={isBtnDisabled()}
+                            fullWidth
+                            variant="contained"
+                            color="primary"
+                        >
+                            Simulate
+                        </Button>
+                    </Grid>
                 </Grid>
                 {result && (
                     <Modal open={true} onClose={() => { setResult(null); setSelections({}) }}>
